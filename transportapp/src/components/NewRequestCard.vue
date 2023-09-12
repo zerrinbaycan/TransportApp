@@ -1,7 +1,7 @@
 
 <template>
     <div class="container">
-        <div class="row justify-content-center" @click="createAccount">
+        <div class="row justify-content-center" @click="loginorNewAccount">
             <div class="card p-0" style="width: 20rem;">
                 <img src="../photos/1movers.png"  alt="...">
                 <div class="card-body text-center">
@@ -15,9 +15,10 @@
 <script>
 export default {
     methods:{
-    createAccount(){
-        console.log("router test")
-        this.$router.push({name:"createAccount"})
+    loginorNewAccount(){
+        console.log("router test loginorNewAccount")
+        this.$router.push({name:"loginorNewAccount"})
+        //this.$router.push({name:"createAccount"})
     }
 }
 };

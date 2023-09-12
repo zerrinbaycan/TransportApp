@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>Yeni Hesap oluştur ekranı</div>
+    <p>UserLogin ekranı</p>
     <br />
     <span @click="transportInfo">Taşıma Ekranına Git</span>
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  methods:{
+    methods:{
     transportInfo(){
       console.log("Taşıma Bilgileri ekranı")
       this.$router.push({name:"transportInfo"})

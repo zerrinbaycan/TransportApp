@@ -15,13 +15,19 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  {
+  /*{
     path: '/newrequest',
     name: 'newrequest',
+    component: () => import('../views/NewRequestCard.vue')
+  },*/
+  {
+    path: '/loginorNewAccount',
+    name: 'loginorNewAccount',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/NewRequestCard.vue')
+    //'../views/CreateAccount.vue'
+    component: () => import(/* webpackChunkName: "about" */ '../components/LoginorNewAccount.vue')
   },
   {
     path: '/createAccount',
@@ -30,7 +36,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     //'../views/CreateAccount.vue'
-    component: () => import(/* webpackChunkName: "about" */ '../components/CreateAccount.vue')
+    component: () => import('../components/CreateAccount.vue')
+  },
+  {
+    path: '/userlogin',
+    name: 'userlogin',   
+    component: () => import( '../components/UserLogin.vue')
+  },
+  {
+    path: '/transportInfo',
+    name: 'transportInfo',   
+    component: () => import( '../components/TransportRequestInfo.vue')
+  },
+  {
+    path: '/vehicleList',
+    name: 'vehicleList',   
+    component: () => import( '../components/VehicleList.vue')
   }
 ]
 

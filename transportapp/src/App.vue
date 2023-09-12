@@ -2,8 +2,7 @@
   <div>
     <nav>
       <router-link to="/">Anasayfa</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/newrequest">Yeni talep</router-link>
+      <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
   </div>
